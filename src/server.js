@@ -57,7 +57,7 @@ app.get("/api/health", (req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Brown Table API is running!");
 });
 
